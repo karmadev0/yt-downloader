@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Descargador de Audio</title>
+</head>
+<body>
+    <h1>Descarga tu audio favorito</h1>
+    <form method="POST" action="/descargar">
+        <input type="text" name="url" placeholder="Pega la URL del video">
+        <button type="submit">Descargar</button>
+    </form>
+
+    {% if thumbnail_url %}
+    <img src="{{ thumbnail_url }}" alt="Miniatura">
+    {% endif %}
+</body>
+</html>
+
